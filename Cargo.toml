@@ -1,0 +1,38 @@
+[package]
+name = "radarust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Core async runtime
+tokio = { version = "1", features = ["full"] }
+
+# --- Azure SDK Crates (Aligned to 0.21.0 for compatibility) ---
+# NOTE: This uses the 'azure_storage_blobs' (plural) crate.
+azure_storage_blobs = "=0.21.0"
+azure_identity = "=0.21.0"
+azure_core = "=0.21.0"
+# This is a required dependency for the 0.21.0 storage crates
+azure_storage = "=0.21.0"
+
+# --- Application-specific Crates ---
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+# For decompressing Quickwit/Zstandard splits
+zstd = "0.13"
+# For robust error handling with context
+anyhow = "1.0"
+# Async streams
+futures = "0.3"
+# For time and duration management
+chrono = { version = "0.4", features = ["serde"] }
+# For full-text search
+tantivy = "0.22"
+# For creating temporary directories for the index
+tempfile = "3.10"
+# For interactive search prompt
+rustyline = "14.0"
+# For Logging
+log = "0.4"
+env_logger = "0.11"
