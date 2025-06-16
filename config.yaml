@@ -1,13 +1,13 @@
 # Azure Blob Storage Configuration
-azure:
-  account: "mwbetaazureeastus"
-  access_key: "Your Secret Key"
+# azure:
+  # account: "mwbetaazureeastus"
+  # access_key: "Your Secret Key"
   # The URI provided: azure://mwbetaazureeastus-log-index/indexes
   # This translates to:
   # container: "mwbetaazureeastus-log-index"
   # path_prefix: "indexes/"
-  container: "mwbetaazureeastus-log-index"
-  path_prefix: "indexes/"
+  # container: "mwbetaazureeastus-log-index"
+  # path_prefix: "indexes/"
 
 # Polling configuration
 polling:
