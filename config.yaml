@@ -1,7 +1,7 @@
 # Azure Blob Storage Configuration
 azure:
   account: "mwbetaazureeastus"
-  access_key: "PdNPJEDb/pjOQjKmqd3V4dR58Pc2lQM1TzGSD6ct5r1xkxifsywFypKHLNEdqjjthzeZfrOO2wY6+ASt+o5wUw=="
+  access_key: "Your Secret Key"
   # The URI provided: azure://mwbetaazureeastus-log-index/indexes
   # This translates to:
   # container: "mwbetaazureeastus-log-index"
