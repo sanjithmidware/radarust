@@ -1,5 +1,0 @@
-
-# Polling configuration
-polling:
-  # The duration to wait between polls, in seconds.
-  duration_seconds: 300 # e.g., 5 minutes
